@@ -6,7 +6,7 @@ public class Book {
     private String name;
     private long yearOfPublishing;
     private String isbn;
-    private static final int isbnLength = 13;
+    private final int ISBN_LENGTH = 13;
 
 
 
@@ -88,13 +88,13 @@ public class Book {
 
         int digit;
         int controlDigit;
-        int initialControlDigit = Integer.parseInt( Character.toString( this.isbn.charAt(isbnLength-1) ) );
+        int initialControlDigit = Integer.parseInt( Character.toString( this.isbn.charAt(ISBN_LENGTH-1) ) );
         int digitSum = 0;
 
 
 
-        for (int i = 0; i < isbnLength-1; i++) {
-            digit = Integer.parseInt( ( Character.toString( this.isbn.charAt(isbnLength-2-i) ) ) );
+        for (int i = 0; i < ISBN_LENGTH-1; i++) {
+            digit = Integer.parseInt( ( Character.toString( this.isbn.charAt(ISBN_LENGTH-2-i) ) ) );
             digitSum += digit * (3-2*(i%2));
         }
 
