@@ -51,7 +51,7 @@ public class Book {
 
 
 
-    public void setIsbn(/*long isbn*/ String isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 
@@ -76,8 +76,8 @@ public class Book {
 
 
         // by this algo you should multiply digits by 3 and 1 in turn backwards.
-        // for example 12th digit is multiplied by 3, 11th digit multiplied by 1 and so on.
-        // then you should add that numbers, then divide that sum by 10 and get the remainder.
+        // for example 12th digit is multiplied by 3, 11th digit is multiplied by 1 and so on.
+        // then you should add this numbers, then divide that sum by 10 and get the remainder.
         // if result is not zero then subtract that result from 10.
         // check if result equals to 13th digit of isbn.
         // SOURCE: https://isbn-information.com/check-digit-for-the-13-digit-isbn.html
