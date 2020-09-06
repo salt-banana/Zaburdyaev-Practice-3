@@ -117,7 +117,7 @@ public class Book {
     public String toString() {
         String out = "SUMMARY:\n" + "AUTHOR: " + this.author + "\nNAME: " + this.name + "\nYEAR OF PUBLISHING: " + this.yearOfPublishing
         + "\nISBN: ";
-        if (checkIsbn())
+        if (this.checkIsbn())
             out += this.isbn;
         else
             out += "INVALID ISBN (" + this.isbn + ")";

@@ -60,7 +60,7 @@ public class Circle {
     @Override
     public String toString() {
         return "This is a circle of radius " + this.radius + ", diameter " + this.diameter + ". It's circumference is "
-        + getCircumference() + " and it's square is " + getSquare() + "!";
+        + this.getCircumference() + " and it's square is " + this.getSquare() + "!";
     }
 
 }
